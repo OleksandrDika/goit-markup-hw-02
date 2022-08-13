@@ -1,9 +1,19 @@
 :root {
+    
     --accent-color:#2196F3;
     --primary-font:'Roboto', sans-serif;
     --bg-color: #2F303A;
+    --bg-color-two: #F5F5F5;
     --primary-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color:#FFFFFF;
+    --fourth-text-color: #F5F4FA;
+    
+    
 }
+
+
+
 
 img {
     display: block;
@@ -23,9 +33,25 @@ button {
 }
 
 body {
+    
+    font-size: 14px;
+    letter-spacing: 0.03;
+    background-color: var(--bg-color-two);
     color: var(--primary-text-color);
     font-family: var(--primary-font)
-  
+     
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* HEADER*/
 
@@ -47,12 +73,17 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--primary-text-color);
 }
+
 
 .menu-link:hover,
 .menu-link:focus {
     color: var(--accent-color)
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 .mail,
@@ -61,7 +92,7 @@ color: #212121;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color:var(--second-text-color);
 }
 
 .mail:hover, .mail:focus,
@@ -82,7 +113,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;
+color:var(--third-text-color);
 }
 
 .btn-form {
@@ -93,12 +124,12 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
+color:var(--third-text-color);
 background-color: #188CE8;
 }
 
 .btn-form:hover, .btn-form:focus {
-    color: var(--accent-color)
+   background-color: var(--accent-color)
 }
 
 /*-----SECTION 2-------*/
@@ -115,7 +146,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color:var(--second-text-color);
 }
 
 /*----SECTION 3--------*/
@@ -127,6 +158,10 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 /* -----SECTION 4 ------*/
+
+.team {
+    background-color:var(--fourth-text-color);
+}
 .our-team { 
 font-weight: 700;
 font-size: 36px;
@@ -148,13 +183,13 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: #757575;
+color:var(--second-text-color);
 }
 
 /*-----FOOTER-----*/
 
 .part-logo-w {
-    color: #FFFFFF;
+    color:var(--third-text-color);
 }
 .our-location {
 font-style: normal; 
@@ -162,7 +197,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color:var(--third-text-color);
 }
 
 .our-contacts {
@@ -192,10 +227,15 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
+color: var(--primary-text-color);
+border-color:var(--fourth-text-color);
 }
 
 .btn-filter:hover, .btn-filter:focus {
-    color:var(--accent-color);
+
+  background-color:var(--accent-color);
+  color:var(--third-text-color);
+
 }
 
 .picture-captions { 
@@ -203,12 +243,12 @@ font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
-color: #212121;
+color:var(--primary-text-color);
 }
 
 .kind-pic {
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--second-text-color);
 }
