@@ -35,9 +35,9 @@ button {
 body {
     
     font-size: 14px;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     background-color: var(--bg-color-two);
-    color: var(--primary-text-color);
+    color: var(--third-text-color);
     font-family: var(--primary-font)
      
 }
